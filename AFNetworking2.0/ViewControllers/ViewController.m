@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "AFNetworkRequestHandler.h"
+#import "AFUploadObject.h"
 
 @interface ViewController ()
 
@@ -18,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     [AFNetworkRequestHandler downloadFileDataFromURL:@"https://awesomewallpapers.files.wordpress.com/2015/06/autowallpaper_-200139.jpg" withCompletionBlock:^(NSData *data, NSError *error) {
         _imageView.image = [UIImage imageWithData:data];
     } andProgressBlock:^(float downloadProgressFraction) {

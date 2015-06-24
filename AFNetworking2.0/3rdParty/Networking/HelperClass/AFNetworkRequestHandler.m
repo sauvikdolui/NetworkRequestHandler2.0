@@ -15,7 +15,7 @@
 + (void)getServerDataFromURL:(NSString*)url parameter:(NSDictionary*)parameter withCompletionBlock:(ServerDataLoadCompletionBlock)completionBlock andProgressBlock:(RequestProgressBlock)progressBlock{
     
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    AFHTTPRequestOperation *getRequeast = [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation,
+    AFHTTPRequestOperation *getRequeast = [manager GET:url parameters:parameter success:^(AFHTTPRequestOperation *operation,
                                                                                              id responseObject) {
         completionBlock(responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -84,7 +84,7 @@
 
 + (void)deleteDataInServerSideAtPath:(NSString*)path parameter:(NSDictionary*)parameter withCompletionBlock:(ServerDataLoadCompletionBlock)completionBlock{
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager DELETE:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager DELETE:path parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
         completionBlock(responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);
@@ -92,7 +92,7 @@
 }
 + (void)putDataInServerSideAtPath:(NSString*)path parameter:(NSDictionary*)parameter withCompletionBlock:(ServerDataLoadCompletionBlock)completionBlock{
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager PUT:path parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager PUT:path parameters:parameter success:^(AFHTTPRequestOperation *operation, id responseObject) {
         completionBlock(responseObject, nil);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         completionBlock(nil, error);

@@ -33,6 +33,7 @@
 		45F2AC391B3968DB008353C4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45F2AC371B3968DB008353C4 /* LaunchScreen.xib */; };
 		45F2AC451B3968DC008353C4 /* AFNetworking2_0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F2AC441B3968DC008353C4 /* AFNetworking2_0Tests.m */; };
 		45F2AC891B3969DC008353C4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F2AC881B3969DC008353C4 /* ViewController.m */; };
+		45F516961B3AADAE005728C4 /* DSC_0758.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 45F516951B3AADAE005728C4 /* DSC_0758.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		45F2AC441B3968DC008353C4 /* AFNetworking2_0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworking2_0Tests.m; sourceTree = "<group>"; };
 		45F2AC871B3969DC008353C4 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		45F2AC881B3969DC008353C4 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		45F516951B3AADAE005728C4 /* DSC_0758.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = DSC_0758.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 		45F2AC281B3968DB008353C4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				45F516951B3AADAE005728C4 /* DSC_0758.jpg */,
 				45F2AC291B3968DB008353C4 /* Info.plist */,
 				45F2AC2A1B3968DB008353C4 /* main.m */,
 			);
@@ -347,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F516961B3AADAE005728C4 /* DSC_0758.jpg in Resources */,
 				45F2AC341B3968DB008353C4 /* Main.storyboard in Resources */,
 				45F2AC391B3968DB008353C4 /* LaunchScreen.xib in Resources */,
 				45F2AC361B3968DB008353C4 /* Images.xcassets in Resources */,
